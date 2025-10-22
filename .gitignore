@@ -1,0 +1,57 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv
+
+# Node project artifacts
+node/node_modules/
+node/dist/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Audio files
+*.wav
+*.raw
+*.ulaw
+!python/examples/data/*.ulaw
+!python/examples/data/*.wav
+!node/src/examples/data/*.ulaw
+!node/src/examples/data/*.wav
+*.pcm
+
+# OS
+.DS_Store
+Thumbs.db

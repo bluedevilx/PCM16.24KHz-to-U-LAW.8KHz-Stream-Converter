@@ -1,0 +1,25 @@
+{
+  "name": "audio-stream-converter",
+  "version": "0.1.0",
+  "description": "PCM16 24kHz to μ-law 8kHz streaming converter for Node.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "license": "MIT",
+  "bin": {
+    "audio-convert": "dist/cli.js",
+    "audio-convert-sample": "dist/examples/convertSample.js"
+  },
+  "scripts": {
+    "build": "rimraf dist && tsc -p tsconfig.json",
+    "sample": "npm run build && node dist/examples/convertSample.js",
+    "cli": "node dist/cli.js",
+    "typecheck": "tsc --noEmit"
+  },
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "rimraf": "^5.0.5",
+    "typescript": "^5.4.0"
+  }
+}
